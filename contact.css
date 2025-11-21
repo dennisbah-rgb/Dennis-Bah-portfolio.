@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+.portfolioText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 100px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: rgb(4, 86, 169);
+}
+nav .active {
+    color: rgb(4, 86, 169);
+}
+main {
+    padding-top: 120px;
+    text-align: center;
+}
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.welcome {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.welcome span {
+    color: rgb(4, 86, 169);
+}       
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(4, 86, 169);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: rgb(3, 64, 128);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolioText {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    nav a {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+    section {
+        padding: 40px 10px;
+    }
+    .welcome {
+        font-size: 1.5rem;
+    }
+}

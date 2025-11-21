@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.portfolioText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 100px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: rgb(4, 86, 169);
+}
+nav .active {
+    color: rgb(4, 86, 169);
+}
+main {
+    padding-top: 120px;
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolioText {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    nav a {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+    .welcome {
+        padding: 80px 20px;
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome h1 {
+        font-size: 2rem;
+    }
+    .welcome h2 {
+        font-size: 1.2rem;
+    }
+    .welcome p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
